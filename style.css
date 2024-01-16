@@ -105,73 +105,92 @@
 
 }
 
-/* main container section ============================= */
-.hero-section {
-    border-radius: 17px;
+
+
+
+
+
+
+.hero-img-bg::after{
     width: 100%;
     height: 500px;
-    background-image: url(images/Group\ 13\ \(1\)\ \(1\).png);
-    background-size: cover;
-}
-
-.bg_image {
-    border-radius: 16px;
+    content: "";
+    top:0;
+    left: 0;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+
 }
 
 
-.bg {
-    overflow: hidden;
-    width: 100%;
-    height: 400px;
-    background-image: url(images/Group\ 13\ \(1\)\ \(1\).png);
-}
 
-.hero-section .content h2 {
-    color: #FFF;
-    font-size: 64px;
-    font-weight: 800;
-}
 
-.hero-section .content p {
-    color: #FFFFFF;
-    margin: 24px 0px 48px 0px;
-    padding: 0px 80px;
-    color: #FFF;
+
+
+
+
+
+
+/* second section ================================== */
+
+
+
+
+
+
+
+/* main container section ============================= */
+
+.hero-img-bg{
+    position: relative;
+    border-radius: 16px;
+background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+}
+.hero-img-bg .bg-text-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
 }
 
 
-.form-wrapper .form-parent {
-    margin: auto;
+.hero-img-bg .bg-text-content h2{
+    width: 100%;
+    color: #FFF;
+font-size: 64px;
+font-weight: 800;
+}
+.hero-img-bg .bg-text-content p{
+    color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px; 
+padding: 24px 0px;
+}
+
+.form-parent{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
     padding: 16px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.30);
 }
 
-.common-style-form-item {
-    width: 174px;
-    height: 52px;
-    padding-left: 14px;
-    padding-right: 14px;
-    color: rgba(19, 19, 24, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-    border-radius: 5px;
+.common-style-form-item{
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
     border: none;
 }
-
-input[type=text]:focus {
-    border: none;
+.form-parent input,
+.form-parent select
+{
+    padding: 16px;
+    border-radius: 10px;
     outline: none;
 }
 
-select:focus {
-    outline: none;
-}
 
 /* section our popular tour =============================== */
 .popular_tour {
@@ -369,7 +388,9 @@ select:focus {
     padding: 50px;
 }
 
-
+.single-hero.left-overlay {
+    margin: 20px 0px;
+}
 
  .overlay .hint {
     display: flex;
@@ -389,14 +410,14 @@ padding-top: 26px;
 padding-bottom: 16px;
 
 }
-.right-overlay .overlay p{
+ .overlay p{
     color: #5A5A5D;
 font-size: 16px;
 font-weight: 400;
 line-height: 26px; 
 
-}
-.right-overlay .overlay h4{
+} 
+ .overlay h4{
     color: #FF5400;
     font-size: 20px;
     font-weight: 800;
@@ -620,4 +641,169 @@ form.newslater input[type="email"] {
     font-family: Inter;
     font-size: 16px;
     font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive for mobile ============================= */
+@media screen and (max-width:600px) {
+ 
+    .nav-wrapper {
+        margin: 50px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+    .tm_wrapper {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .hero-img-bg .bg-text-content h2 {
+        font-size: 30px;
+    }
+    .hero-img-bg .bg-text-content p {
+        line-height: 19px;
+        padding: 7px 23px;
+    }
+    .form-parent {
+        flex-direction: column;
+        column-gap: 10px solid #ddd;
+    }
+    .common-style-form-item {
+        margin-bottom: 10px;
+    }
+    .popular_tour .content-wrapper {
+        width: 550px;
+        flex-direction: column;
+        padding-left: 35px;
+    }
+    .popular_tour .content-wrapper .left-content {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .destination-wrapper {
+        width: 570px;
+        margin: auto;
+    }
+    .section-header h2 {
+        font-size: 25px;
+    }
+    .destination-wrapper .portfolio-section .row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+        gap: 20px;
+        margin-bottom: 15px;
+    }.why-choose-us {
+        width: 550px;
+        margin:auto;
+
+    }
+    .why-choose-us .content-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    .section-wrapper{
+        margin-left: 25px;
+    }.section-header {
+        text-align: center;
+        padding: 27px 11% 0px;
+    }
+ .line-break{
+        display: block;
+    }
+    .right-overlay .overlay {
+        position: absolute;
+        top: 48%;
+        right: -40%;
+        transform: translate(-51%, -50%);
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        width: 65%;
+        padding: 35px;
+    }
+    .left-overlay .overlay {
+        position: absolute;
+        top: 48%;
+        right: -40%;
+        transform: translate(-51%, -50%);
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        width: 65%;
+        padding: 35px;
+    }
+
+
+    .video-wrapper {
+        width: 550px;
+        margin:auto;
+        flex-direction: column;
+        padding-left: 5%;
+    }
+    .video-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-wrapper button.primary-btn.all-btn {
+        margin-left: 5%;
+    }
+    .video-wrapper .v-left-section {
+        padding-right: 0;
+        margin-bottom: 10px;
+    }
+    .newslater-wrapper {
+        flex-direction: column;
+        margin-left: 10%;
+        overflow:hidden;
+        display: block;
+        border-radius: 16px;
+        padding:10px;
+    }
+    .newslater-section .right-side  {
+        margin-top:10px;
+    }
+    .newslater-section .right-side .promo-text {
+        right: 14%;
+        bottom: 15%;
+    }
+    .footer-center {
+        padding: 31px 0px;
+    }
+    .copyright {
+        margin-top: 24px;
+        padding-top: 24px;
+        border-top: 1px solid #ddd;
+    }
+
+
 }
