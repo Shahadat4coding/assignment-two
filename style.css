@@ -674,6 +674,7 @@ form.newslater input[type="email"] {
 @media screen and (max-width:600px) {
  
     .nav-wrapper {
+        padding: 0px 20px;
         margin: 50px 0px;
         display: flex;
         justify-content: space-between;
@@ -733,6 +734,31 @@ form.newslater input[type="email"] {
         line-height: 19px;
         padding: 7px 23px;
     }
+
+    /* .popular_tour .right-content {
+        width: 82%;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+    
+    .hero-section .item-wrapper {
+        display: block;
+        overflow: hidden;
+        width: 84%;
+        margin: auto;
+    } */
+    .destination-wrapper .portfolio-section .single-port-img {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        width: 85%;
+        margin: auto;
+        border-radius: 15px;
+    }
+    .destination-wrapper .portfolio-section img {
+        width: 90%;
+    }
+
     .form-parent {
         flex-direction: column;
         column-gap: 10px solid #ddd;
@@ -749,6 +775,13 @@ form.newslater input[type="email"] {
         width: 90%;
         margin-bottom: 10px;
     }
+    .popular_tour .content-wrapper .image-wrapper {
+        width: 88%;
+        margin: 1%;
+        overflow: hidden;
+        display: block;
+        border-radius: 16px;
+    }
     .destination-wrapper {
         width: 570px;
         margin: auto;
@@ -764,11 +797,57 @@ form.newslater input[type="email"] {
         overflow: hidden;
         gap: 20px;
         margin-bottom: 15px;
-    }.why-choose-us {
+    }
+  
+    
+    
+    
+    /* .why-choose-us {
         width: 550px;
         margin:auto;
 
+    } */
+    
+    .single-hero .full-img {
+        display: block;
+        width: 90%;
+        margin: auto;
     }
+    .single-hero .full-img img {
+        width: 100%;
+        height: 454px;
+    }
+
+    .single-hero.right-overlay .overlay {
+        position: absolute;
+        top: 48%;
+        right: -30%;
+        transform: translate(-51%, -50%);
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        width: 65%;
+        padding: 35px;
+    }
+    .single-hero.left-overlay .overlay {
+        position: absolute;
+        top: 48%;
+        right: -34%;
+        transform: translate(-23%, -50%);
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        width: 65%;
+        padding: 35px;
+    }
+    .deals-and-discount button.primary-btn.all-btn {
+        margin-left: 60px;
+    }
+
+
+
     .why-choose-us .content-section {
         display: flex;
         flex-direction: column;
