@@ -47,6 +47,9 @@
     cursor: pointer;
     background-color: #e95810be;
 }
+.on-of{
+    display: none;
+}
 
 /* primary style ============================================ */
 
@@ -412,6 +415,7 @@ background: rgba(255, 255, 255, 0.30);
     color: #5A5A5D;
 font-size: 16px;
 font-weight: 400;
+padding-right: 15px;
 }
  .overlay h3{
     color: #131318;
@@ -437,7 +441,11 @@ line-height: 26px;
 
 }
 
-
+.button-center {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
 
 
 
@@ -672,7 +680,10 @@ form.newslater input[type="email"] {
 
 /* responsive for mobile ============================= */
 @media screen and (max-width:600px) {
- 
+    .on-of{
+        display: block;
+    }
+
     .nav-wrapper {
         padding: 0px 20px;
         margin: 50px 0px;
@@ -842,7 +853,7 @@ form.newslater input[type="email"] {
         width: 65%;
         padding: 35px;
     }
-    .deals-and-discount button.primary-btn.all-btn {
+    .deals-and-discount > button.primary-btn.all-btn {
         margin-left: 60px;
     }
 
@@ -888,6 +899,9 @@ form.newslater input[type="email"] {
         width: 65%;
         padding: 35px;
     }
+    .overlay .hint p{
+    padding-right: 5px;
+    }
 
 
     .video-wrapper {
@@ -911,14 +925,23 @@ form.newslater input[type="email"] {
     }
     .newslater-wrapper {
         flex-direction: column;
-        margin-left: 10%;
-        overflow:hidden;
+        margin-left: 4%;
+        margin-right: 4%;
+        overflow: hidden;
         display: block;
         border-radius: 16px;
-        padding:10px;
+        padding: 10px;
     }
     .newslater-section .right-side  {
         margin-top:10px;
+    }
+    .newslater-section .right-side > img {
+        overflow: hidden;
+        /* display: block; */
+        width: 90%;
+    }
+    .destination-wrapper .portfolio-section img {
+        width: 100%;
     }
     .newslater-section .right-side .promo-text {
         right: 14%;
